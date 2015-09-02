@@ -27,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		47D45B701B7E332600BD25EE /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D45B741B7E332600BD25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D45B751B7E332600BD25EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D45B771B7E332600BD25EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47D45B7A1B7E332600BD25EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,17 +81,8 @@
 				47D45B791B7E332600BD25EE /* Main.storyboard */,
 				47D45B7C1B7E332600BD25EE /* Images.xcassets */,
 				47D45B7E1B7E332600BD25EE /* LaunchScreen.xib */,
-				47D45B731B7E332600BD25EE /* Supporting Files */,
 			);
 			path = "Pitch Perfect";
-			sourceTree = "<group>";
-		};
-		47D45B731B7E332600BD25EE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				47D45B741B7E332600BD25EE /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		47D45B881B7E332600BD25EE /* Pitch PerfectTests */ = {
@@ -409,6 +399,7 @@
 				47D45B911B7E332600BD25EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D45B921B7E332600BD25EE /* Build configuration list for PBXNativeTarget "Pitch PerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +408,7 @@
 				47D45B941B7E332600BD25EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
