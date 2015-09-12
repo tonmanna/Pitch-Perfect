@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q9E-wR-ZF5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -46,9 +47,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="144" y="317" width="112" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52049872620000004" green="0.69446287070000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,14 +68,14 @@
                                 <exclude reference="2mQ-8f-xwn"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5Nd-p8-DUW"/>
-                                <exclude reference="vbl-3B-aTC"/>
                                 <exclude reference="8Mn-du-Gel"/>
                                 <exclude reference="cHV-IJ-Ysh"/>
                                 <exclude reference="EoG-Uv-Bgg"/>
                                 <exclude reference="qR7-zj-ild"/>
                                 <exclude reference="ao2-B2-NAF"/>
                                 <exclude reference="lA2-wl-hMz"/>
+                                <exclude reference="5Nd-p8-DUW"/>
+                                <exclude reference="vbl-3B-aTC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -88,14 +86,14 @@
                                 <include reference="2mQ-8f-xwn"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5Nd-p8-DUW"/>
-                                <include reference="vbl-3B-aTC"/>
                                 <include reference="8Mn-du-Gel"/>
                                 <include reference="cHV-IJ-Ysh"/>
                                 <include reference="EoG-Uv-Bgg"/>
                                 <include reference="qR7-zj-ild"/>
                                 <include reference="ao2-B2-NAF"/>
                                 <include reference="lA2-wl-hMz"/>
+                                <include reference="5Nd-p8-DUW"/>
+                                <include reference="vbl-3B-aTC"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,7 +128,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="284" y="100" width="100" height="100"/>
+                                    <rect key="frame" x="184" y="100" width="100" height="100"/>
                                 </variation>
                                 <connections>
                                     <action selector="playSpeedSound:" destination="E0v-xt-cLK" eventType="touchUpInside" id="Yoq-2V-C5p"/>
@@ -175,7 +173,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="284" y="208" width="100" height="100"/>
+                                    <rect key="frame" x="184" y="208" width="100" height="100"/>
                                 </variation>
                                 <connections>
                                     <action selector="playDartvador:" destination="E0v-xt-cLK" eventType="touchUpInside" id="kNo-pT-WaX"/>
@@ -210,16 +208,16 @@
                                 <exclude reference="2vq-Yr-lgF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="rWR-SX-Sia"/>
-                                <exclude reference="w3x-xK-i00"/>
-                                <exclude reference="KWC-kt-zz0"/>
-                                <exclude reference="hYH-9H-3cw"/>
-                                <exclude reference="OFz-4f-hEx"/>
-                                <exclude reference="W5w-Ny-t8h"/>
                                 <exclude reference="7GQ-fz-kWr"/>
                                 <exclude reference="ZGo-M4-8dp"/>
                                 <exclude reference="A32-L0-Nec"/>
                                 <exclude reference="gsq-Un-Bqg"/>
+                                <exclude reference="KWC-kt-zz0"/>
+                                <exclude reference="hYH-9H-3cw"/>
+                                <exclude reference="OFz-4f-hEx"/>
+                                <exclude reference="W5w-Ny-t8h"/>
+                                <exclude reference="rWR-SX-Sia"/>
+                                <exclude reference="w3x-xK-i00"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -231,16 +229,16 @@
                                 <include reference="2vq-Yr-lgF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="rWR-SX-Sia"/>
-                                <include reference="w3x-xK-i00"/>
-                                <include reference="KWC-kt-zz0"/>
-                                <include reference="hYH-9H-3cw"/>
-                                <include reference="OFz-4f-hEx"/>
-                                <include reference="W5w-Ny-t8h"/>
                                 <include reference="7GQ-fz-kWr"/>
                                 <include reference="ZGo-M4-8dp"/>
                                 <include reference="A32-L0-Nec"/>
                                 <include reference="gsq-Un-Bqg"/>
+                                <include reference="KWC-kt-zz0"/>
+                                <include reference="hYH-9H-3cw"/>
+                                <include reference="OFz-4f-hEx"/>
+                                <include reference="W5w-Ny-t8h"/>
+                                <include reference="rWR-SX-Sia"/>
+                                <include reference="w3x-xK-i00"/>
                             </mask>
                         </variation>
                     </view>
