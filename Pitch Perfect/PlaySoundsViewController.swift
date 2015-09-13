@@ -20,12 +20,6 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if var filePath = NSBundle.mainBundle().pathForResource("duck", ofType: "m4a"){
-//            var filePathUrl = NSURL.fileURLWithPath(filePath);
-//        }else{
-//        
-//        }
-        
         audioPlayer = AVAudioPlayer(contentsOfURL: recivededAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
         
@@ -41,29 +35,19 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSlowSound(sender: UIButton) {
-        audioEngine.stop()
-        audioEngine.reset()
-
-        audioPlayer.stop()
+        stopAllAudio()
         audioPlayer.rate = 0.5
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     @IBAction func playSpeedSound(sender: UIButton) {
-        audioEngine.stop()
-        audioEngine.reset()
-
-        audioPlayer.stop()
+        stopAllAudio()
         audioPlayer.rate = 1.5
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     @IBAction func btStop(sender: UIButton) {
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
-
-
+        stopAllAudio()
     }
     
     @IBAction func playChipmunk(sender: UIButton) {
@@ -73,11 +57,9 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playDartvador(sender: UIButton) {
         playAudioWitchVariablePitch(-1000)
     }
+    
     func playAudioWitchVariablePitch(pitch : Float){
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
-        
+        stopAllAudio()
         let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
         
@@ -92,14 +74,11 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.startAndReturnError(nil)
         audioPlayerNode.play()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func stopAllAudio(){
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+        
     }
-    */
-
 }

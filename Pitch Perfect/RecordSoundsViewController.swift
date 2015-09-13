@@ -23,6 +23,7 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         btStop.hidden = true
     }
 
@@ -44,10 +45,9 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
     }
     @IBAction func recordAcudio(sender: UIButton) {
         ///TODO: Show text recording in progress"
+
         lbRecord.hidden = false
         lbTapRecord.hidden = true
-        
-        println("I'm press button")
         btStop.hidden = false
         btRecord.enabled = false
         
@@ -55,14 +55,9 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
         //Inside func recordAudio(sender: UIButton)
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         
-//        let currentDateTime = NSDate()
-//        let formatter = NSDateFormatter()
-//        formatter.dateFormat = "ddMMyyyy-HHmmss"
-//        let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
         let recordingName = "my_audio.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
-        println(filePath)
         
         var session = AVAudioSession.sharedInstance()
         session.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
@@ -77,12 +72,15 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
         if(flag){
             recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent)
-            //recordedAudio.filePathUrl = recorder.url
-            //recordedAudio.title = recorder.url.lastPathComponent
-            self.performSegueWithIdentifier("stopRecording",sender :recordedAudio)
+            performSegueWithIdentifier("stopRecording",sender :recordedAudio)
         }
         else{
-            println("Record is not successful")
+            let uiAlertView = UIAlertView()
+            uiAlertView.title = "Error!!";
+            uiAlertView.message = "Record is not successful"
+            uiAlertView.addButtonWithTitle("OK")
+            uiAlertView.show();
+
             btRecord.enabled = true
             btStop.hidden = true
         }
@@ -94,5 +92,6 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
             let data = sender as! RecordedAudio
             playSoundsVC.recivededAudio = data
         }
+        super.prepareForSegue(segue,sender: sender)
     }
 }
