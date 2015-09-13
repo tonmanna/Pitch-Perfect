@@ -17,11 +17,6 @@ class RecourdSoundViewController: UIViewController , AVAudioRecorderDelegate {
     var audioRecorder:AVAudioRecorder!
     var recordedAudio : RecordedAudio!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         btStop.hidden = true

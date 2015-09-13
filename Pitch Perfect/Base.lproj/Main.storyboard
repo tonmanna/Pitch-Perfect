@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q9E-wR-ZF5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -126,9 +127,6 @@
                                 <state key="normal" image="Rabit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="234" y="95" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playSpeedSound:" destination="E0v-xt-cLK" eventType="touchUpInside" id="Yoq-2V-C5p"/>
                                 </connections>
@@ -138,9 +136,6 @@
                                 <state key="normal" image="Slow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="66" y="95" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playSlowSound:" destination="E0v-xt-cLK" eventType="touchUpInside" id="U5J-zB-nrM"/>
                                 </connections>
@@ -150,9 +145,6 @@
                                 <state key="normal" image="Chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="66" y="203" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playChipmunk:" destination="E0v-xt-cLK" eventType="touchUpInside" id="ZYp-en-4iJ"/>
                                 </connections>
@@ -162,9 +154,6 @@
                                 <state key="normal" image="Dartvador">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="234" y="203" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playDartvador:" destination="E0v-xt-cLK" eventType="touchUpInside" id="kNo-pT-WaX"/>
                                 </connections>
@@ -174,9 +163,6 @@
                                 <state key="normal" image="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="100" y="424" width="200" height="200"/>
-                                </variation>
                                 <connections>
                                     <action selector="btStop:" destination="E0v-xt-cLK" eventType="touchUpInside" id="rkg-mS-s5q"/>
                                 </connections>
@@ -204,16 +190,16 @@
                                 <exclude reference="BHM-5L-kSo"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="bUN-zc-Fp6"/>
-                                <exclude reference="dbd-XR-d2d"/>
-                                <exclude reference="79A-Gg-fRg"/>
-                                <exclude reference="JTA-eB-TKr"/>
-                                <exclude reference="MQK-Ux-FBP"/>
-                                <exclude reference="uMR-T2-Kjq"/>
                                 <exclude reference="h8a-aW-0YH"/>
                                 <exclude reference="rWc-ft-0HZ"/>
                                 <exclude reference="fXA-lQ-Ni5"/>
                                 <exclude reference="nD2-ye-zQA"/>
+                                <exclude reference="79A-Gg-fRg"/>
+                                <exclude reference="JTA-eB-TKr"/>
+                                <exclude reference="MQK-Ux-FBP"/>
+                                <exclude reference="uMR-T2-Kjq"/>
+                                <exclude reference="bUN-zc-Fp6"/>
+                                <exclude reference="dbd-XR-d2d"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -225,16 +211,16 @@
                                 <include reference="BHM-5L-kSo"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="bUN-zc-Fp6"/>
-                                <include reference="dbd-XR-d2d"/>
-                                <include reference="79A-Gg-fRg"/>
-                                <include reference="JTA-eB-TKr"/>
-                                <include reference="MQK-Ux-FBP"/>
-                                <include reference="uMR-T2-Kjq"/>
                                 <include reference="h8a-aW-0YH"/>
                                 <include reference="rWc-ft-0HZ"/>
                                 <include reference="fXA-lQ-Ni5"/>
                                 <include reference="nD2-ye-zQA"/>
+                                <include reference="79A-Gg-fRg"/>
+                                <include reference="JTA-eB-TKr"/>
+                                <include reference="MQK-Ux-FBP"/>
+                                <include reference="uMR-T2-Kjq"/>
+                                <include reference="bUN-zc-Fp6"/>
+                                <include reference="dbd-XR-d2d"/>
                             </mask>
                         </variation>
                     </view>
